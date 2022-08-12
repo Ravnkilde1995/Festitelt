@@ -1,0 +1,146 @@
+.a {
+    display: block;
+    padding: 7px 10px;
+    text-decoration: none;
+    font-weight: 450;
+    color: rgb(0, 0, 0);
+}
+
+.a:hover{
+    color: #FFA900;
+    transition: 0.2s;
+}
+
+.container{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+.pchead{
+    background: rgb(102, 101, 101);
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 3px;
+    color: rgb(245, 240, 230); 
+    border: none;
+    height: 40%;
+
+}
+
+.pstor {
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.pmellem {
+    font-size: 17px;
+    text-align: center;
+    
+
+    
+}
+.plille {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    
+}
+
+.pcbody{
+    background: rgb(58, 57, 57);
+    padding: 5px 5px;
+    
+    border-radius: 3px;
+    color: rgb(245, 240, 230);
+    border: none;
+    height: 50%;
+
+}
+
+.pcfull{
+    background: rgb(58, 57, 57);
+    border-radius: 3px;
+    
+}
+
+.pcbot{
+    background-color:#FFA900;
+    color: rgb(245, 240, 230);
+    font-weight: 500;
+    font-size: 17px;
+    border: none;
+    height: 10%;
+
+}
+
+
+.mail{
+    font-size: 70px;
+    
+}
+
+.telefon{
+    font-size: 70px;
+    
+}
+
+.posmail{
+    display: flex;
+    justify-content: center;
+    border: none;
+
+}
+
+textarea{
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid black;
+
+}
+
+#input_pos{
+    display: flex;
+    justify-content: center;
+
+}
+
+#btn_pos{
+    display: flex;
+    justify-content: center;
+
+}
+
+.sendbtn{
+    background-color: rgb(117, 243, 117);
+    border-radius: 6px;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 700;
+    color: white;
+
+}
+
+.sendbtn:hover{
+    background-color: rgb(6, 180, 6);
+
+}
+
+.contacttext{
+    position: absolute;
+    left: 15%;
+    top: 24%;
+    max-width: 20%;
+
+}
+
+hr.hr1{
+    border-top: 3px solid rgb(0, 0, 0);
+    border-style: solid;
+    width: 100%;
+
+}

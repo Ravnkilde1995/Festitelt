@@ -7,18 +7,18 @@ const app = express();
 
 app.use(express.json());
 
-app.use(express.static(path.resolve("../Client/public")));
+app.use(express.static(path.resolve("./Client/public")));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.resolve("../Client/public/index.html"));
+    res.sendFile(path.resolve("./Client/public/index.html"));
 });
 
 app.get("/prices", (req, res) => {
-    res.sendFile(path.resolve("../Client/public/prices.html"));
+    res.sendFile(path.resolve("./Client/public/prices.html"));
 });
 
 app.get("/contact", (req, res) => {
-    res.sendFile(path.resolve("../Client/public/contact.html"));
+    res.sendFile(path.resolve("./Client/public/contact.html"));
 });
 
 //Register user function

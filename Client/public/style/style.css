@@ -1,93 +1,152 @@
-.a {
-    display: block;
-    padding: 7px 10px;
+/* Master style */
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.container-frontpage {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles */
+.nav-wrapper {
+display: flex;
+justify-content: space-between;
+padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
     text-decoration: none;
-    font-weight: 450;
-    color: rgb(0, 0, 0);
+    transition: color 0.5s;
 }
 
-.a:hover{
-    color: #FFA900;
-    transition: 0.2s;
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
 }
 
-.container{
-    display : flex;
-    flex-direction: row;
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+/*Portfolio styles */
+
+.h3-frontpage {
+    position: absolute;
+    left: 8% ;
+    top: 20%;
+    color: rgba(255, 0, 0, 0.26);
+    font-size: 50px;
+    font-family: arial;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px;
+}
+
+.h2-frontpage {
+    position: absolute;
+    left: 11% ;
+    top: 33%;
+    color: rgba(0, 0, 0, 0.534);
+    font-size: 25px;
+    font-family: arial;
+    width: 30%;
+}
+
+.h1-frontpage {
+    position: absolute;
+    left: 14% ;
+    top: 45%;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+    font-family: arial;
+    width: 30%;
+}
+
+.h3-prices {
+    position: absolute;
+    left: 8% ;
+    top: 20%;
+    color: whitesmoke;
+    font-size: 50px;
+    font-family: arial;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px;
+}
+
+
+.h2-prices {
+    position: absolute;
+    left: 8% ;
+    top: 30%;
+    color: rgba(0, 0, 0, 0.534);
+    font-size: 25px;
+    font-family: arial;
+    width: 25%;
+}
+
+/* CardsTab "Prices" */
+
+.container-prices {
+    width: 100%;
+    height: 100vh;
+}
+
+.container-prices{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    
-    
+    align-items: center;
 }
 
-.pchead{
-    background: rgb(102, 101, 101);
-    padding: 10px 5px;
+.box1,.box2,.box3,.box4,.box5, .box6 {
+    width: 300px;
+    height: 320px;
+    background: radial-gradient(circle at top left, transparent 1px, rgba(255, 255, 255, 0.3)),
+    radial-gradient(circle at bottom right, transparent 340px, rgba(255, 255, 255, 0.3));
+    margin: 15px;
+    padding: 5px;
+    color: whitesmoke;
     text-align: center;
-    border-radius: 3px;
-    color: rgb(245, 240, 230); 
-    border: none;
-    height: 40%;
+    transition: .3s ease-in-out;
 
 }
 
-.pstor {
-    font-size: 35px;
-    text-align: center;
-    margin: 0;
+.h2-pricesCard{
+    letter-spacing: 2px;
+    margin: 0 0 .6rem 0;
+    color: rgb(10, 10, 10);
+    font-family: arial;
+
     
 }
 
-.pmellem {
-    font-size: 17px;
-    text-align: center;
-    
 
-    
-}
-.plille {
-    font-size: 14px;
-    text-align: center;
-    margin: 0;
+.box1 p, .box2 p, .box3 p, .box4 p, .box5 p, .box6 p{
+    line-height: 1.6;
+    padding: 0 10px;
     
 }
 
-.pcbody{
-    background: rgb(58, 57, 57);
-    padding: 5px 5px;
-    
-    border-radius: 3px;
-    color: rgb(245, 240, 230);
-    border: none;
-    height: 50%;
-
-}
-
-.pcfull{
-    background: rgb(58, 57, 57);
-    border-radius: 3px;
-    
-}
-
-.pcbot{
-    background-color:#FFA900;
-    color: rgb(245, 240, 230);
-    font-weight: 500;
-    font-size: 17px;
-    border: none;
-    height: 10%;
-
-}
-
-
-.mail{
-    font-size: 70px;
-    
-}
-
-.telefon{
-    font-size: 70px;
-    
-}
+/* Email setup */
 
 .posmail{
     display: flex;
@@ -127,20 +186,5 @@ textarea{
 
 .sendbtn:hover{
     background-color: rgb(6, 180, 6);
-
-}
-
-.contacttext{
-    position: absolute;
-    left: 15%;
-    top: 24%;
-    max-width: 20%;
-
-}
-
-hr.hr1{
-    border-top: 3px solid rgb(0, 0, 0);
-    border-style: solid;
-    width: 100%;
 
 }

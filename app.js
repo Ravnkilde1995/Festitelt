@@ -13,8 +13,12 @@ app.get("/", (req, res) => {
     res.sendFile(path.resolve("./Client/public/index.html"));
 });
 
-app.get("/prices", (req, res) => {
-    res.sendFile(path.resolve("./Client/public/prices.html"));
+app.get("/tent", (req, res) => {
+    res.sendFile(path.resolve("./Client/public/tent.html"));
+});
+
+app.get("/accessories", (req, res) => {
+    res.sendFile(path.resolve("./Client/public/accessories.html"));
 });
 
 app.get("/contact", (req, res) => {
@@ -23,15 +27,15 @@ app.get("/contact", (req, res) => {
 
 //Register user function
 app.post("/sendmail", async (req, res) => {
-    const { name, email, message } = req.body
+    const { name, phone, email, subject, message } = req.body
 
-    sendMail(name, email, message);
+    sendMail(name, phone, email, subject, message);
 
 });
 
 
 // Send mail using nodemailer function
-function sendMail(name, email, message) {
+function sendMail(name, phone, email, subject, message) {
     let mailTransporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -43,9 +47,9 @@ function sendMail(name, email, message) {
     let mailDetails = {
         from: 'festiteltservice@gmail.com',
         // SKIFT TIL jankarlsson@mail.tele.dk NÅR DET ER KLART
-        to: 'ravnkilde1995@gmail.com',
+        to: 'jankarlsson@mail.tele.dk',
         subject: 'Spørgsmål fra ' + name,
-        html: '<p> Afsender: </p>' + email + ", Spørgsmål:  " + message
+        html: '<p> Afsender: </p>' + '\n' +' Telefon nr: ' + phone + '\n' + ' Mail adresse: ' + email + '\n' + ' Emne: ' + subject + '\n' + " Spørgsmål:  " + message
     };
 
     mailTransporter.sendMail(mailDetails, function (err) {

@@ -64,28 +64,28 @@
             <div class="input-row">
               <div class="input-group">
                 <label>Navn</label>
-                <input type="text" placeholder="Skriv...">
+                <input type="text" id="name" placeholder="Skriv...">
               </div>
               <div class="input-group">
                 <label>Telefon</label>
-                <input type="text " placeholder="Skriv...">
+                <input type="text " id="phone" placeholder="Skriv...">
               </div>
             </div>
 
             <div class="input-row">
                 <div class="input-group">
                   <label>Email</label>
-                  <input type="text" placeholder="Skriv...">
+                  <input type="text" id="email" placeholder="Skriv...">
                 </div>
                 <div class="input-group">
                   <label>Emne</label>
-                  <input type="text" placeholder="Skriv...">
+                  <input type="text" id="subject" placeholder="Skriv...">
                 </div>
             </div>
         
               <label>Besked</label>
-              <textarea rows="5" placeholder="din besked..."></textarea>
-              <button type="submit">SEND</button>
+              <textarea rows="5" id="message" placeholder="din besked..."></textarea>
+              <button type="submit" onclick="test()">SEND</button>
             </form>
           </div>
          
@@ -105,22 +105,6 @@
         </div> 
       </div>
     </div>
-    
-
-
-    <!-- <div class="posmail">
-        <div>
-            <div id="input_pos">
-              <input type="text" id="name" placeholder="Fulde navn"> </textarea>
-              <input type="text" id="email" placeholder="Mail adresse"> </textarea>
-            </div>
-            <textarea type="text" id="message" placeholder="Skriv din besked..."> </textarea>
-        </div>
-      </div>
-    
-    <div id="btn_pos">
-      <button class="sendbtn" onclick="test()">Send mail</button>
-    </div> -->
 
 </body>
 
@@ -128,16 +112,20 @@
 
     async function test(){
       const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
       const email = document.getElementById("email").value;
+      const subject = document.getElementById("subject").value;
       const message = document.getElementById("message").value;
   
       const user = {}
   
       user.name = name;
+      user.phone = phone;
       user.email = email;
+      user.subject = subject
       user.message = message;
   
-      if(user.name != undefined && user.email != undefined && user.message != undefined) {
+      if(user.name != undefined && user.phone != undefined && user.email != undefined && user.subject != undefined && user.message != undefined) {
           const res = await fetch(`/sendmail`, {
           headers: {
             "content-type": "application/json"

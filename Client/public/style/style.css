@@ -166,7 +166,7 @@ padding: 38px;
 .contact-right{
     flex-basis: 40%;
     padding: 40px ;
-    background: #1c00b5;
+    background: #4837aa;
     color: #fff;
 }
 
@@ -207,11 +207,11 @@ input{
 label{
     margin-bottom: 6px;
     display: block;
-    color: #1c00b5;
+    color: #4837aa;
 }
 
 button{
-    background: #1c00b5;
+    background: #4837aa;
     width: 100px;
     border: none;
     outline: none;
@@ -223,7 +223,7 @@ button{
 }
 
 .contact-left h3{
-    color: #1c00b5;
+    color: #4837aa;
     font-weight: 600;
     margin-bottom: 30px;
 }

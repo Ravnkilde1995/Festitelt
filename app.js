@@ -44,12 +44,14 @@ function sendMail(name, phone, email, subject, message) {
         }
     });
 
+    
     let mailDetails = {
         from: 'festiteltservice@gmail.com',
         // SKIFT TIL jankarlsson@mail.tele.dk NÅR DET ER KLART
-        to: 'jankarlsson@mail.tele.dk',
+        to: 'ravnkilde1995@gmail.com',
         subject: 'Spørgsmål fra ' + name,
-        html: '<p> Afsender: </p>' + '\n' +' Telefon nr: ' + phone + '\n' + ' Mail adresse: ' + email + '\n' + ' Emne: ' + subject + '\n' + " Spørgsmål:  " + message
+        html: '<p> <b> Navn: </b>'+ name + ' <br><br> <b> Afsender: </b>' + email +'<br><br> <b> Telefon nr: </b>' + phone + '<br><br> <b> Emne: </b>' + subject + '<br><br> <b> Spørgsmål: </b> <br><br> ' + message + '</p>'
+        
     };
 
     mailTransporter.sendMail(mailDetails, function (err) {

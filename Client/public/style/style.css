@@ -54,12 +54,12 @@ padding: 38px;
 .h3-frontpage {
 
     color: rgba(255, 0, 0, 0.26);
-    font-size: 5vw;
+    font-size: 3em;
     line-height: 1;
     font-family: arial;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px;
-    margin: 0 0 .25em;
+    margin-left: 80px;
 }
 
 .h2-frontpage {
@@ -67,51 +67,28 @@ padding: 38px;
     font-size: 1.2em;
     line-height: 1.7;
     font-family: arial;
-    margin: 1.5em 0;
-    
-    
-    
+    margin-left: 80px;
     
 }
 
 .h3-prices {
     color: whitesmoke;
-    font-size: 6vh;
+    font-size: 3em;
+    line-height: 1;
     font-family: arial;
     text-transform: uppercase;
     text-shadow: 1px 1px 1px;
+    margin-left: 80px;
 }
 
 
 .h2-prices {
-    color: whitesmoke;
-    font-size: 3vh;
+    color: rgb(0, 17, 252);
+    font-size: 1.2em;
+    line-height: 1.7;
     font-family: arial;
-    width: 30%;
+    margin-left: 80px;
 }
-
-/* .text{
-    display: block;
-    justify-content: start;
-}
-
-.text1{
-    position: relative;
-} */
-
-/* .leg{
-    position: absolute;
-    left: 10%;
-    top: 20%;
-
-}
-
-.leg1{
-    position: absolute;
-    left: 15%;
-    top: 200%;
-
-} */
 
 /* Cards */
 
@@ -241,7 +218,6 @@ button{
 
 .contact-right h3{
     font-weight: 600;
-    margin-bottom: 30px;
 }
 
 tr td:first-child{
@@ -270,11 +246,11 @@ ul li
 ul li a
 {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 90px;
+    height: 90px;
     display: block;
     text-align: center;
-    margin: 0 10px;
+    margin: 0 180px;
     border-radius: 50%;
     padding: 6px;
     box-sizing: border-box;
@@ -282,6 +258,9 @@ ul li a
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
     background: linear-gradient(0deg, #ddd, #fff);
     transition: .5s;
+    margin-bottom: 20px;
+    
+    
 }
 ul li a:hover
 {
@@ -292,12 +271,12 @@ ul li a .fa
     width: 100%;
     height: 100%;
     display: block;
-    background: linear-gradient(0deg, #fff, #ddd);
     border-radius: 50%;
     line-height: calc(120px - 12px);
     font-size: 40px;
     color: #262626;
     transition: .5s;
+    margin-top: -10px;
 }
 
 ul li:nth-child(1) a:hover .fa

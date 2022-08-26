@@ -36,24 +36,28 @@ padding: 38px;
 }
 
 .nav-link-wrapper a {
-    color: #8a8a8a;
+    color: #acacac;
     text-decoration: none;
     transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .nav-link-wrapper a:hover {
-    color: black;
+    color: whitesmoke;
+}
+
+.brand {
+    color: whitesmoke;
 }
 
 /*Portfolio styles */
 
 .h3-frontpage {
 
-    color: rgba(255, 0, 0, 0.26);
+    color: whitesmoke;
     font-size: 3em;
     line-height: 1;
     font-family: arial;
@@ -63,7 +67,7 @@ padding: 38px;
 }
 
 .h2-frontpage {
-    color: rgba(0, 0, 0, 0.534);
+    color: whitesmoke;
     font-size: 1.2em;
     line-height: 1.7;
     font-family: arial;
@@ -83,18 +87,77 @@ padding: 38px;
 
 
 .h2-prices {
-    color: rgb(0, 17, 252);
+    color: whitesmoke;
     font-size: 1.2em;
     line-height: 1.7;
     font-family: arial;
     margin-left: 80px;
 }
 
+.hr-white{
+    color: #ccc;
+}
+
+/* Contact me button frontpage */
+
+
+.button-body{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  
+} 
+span{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  
+}
+span a:before,
+span a:after{
+  position: absolute;
+  content: "Kontakt os";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #fff;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+} 
+
 /* Cards */
 
-.container-prices {
+ .container-prices {
     width: 100%;
-    height: 70vh;
+    height: 50vh;
 }
 
 .container-prices{
@@ -130,6 +193,47 @@ padding: 38px;
     line-height: 1.6;
     padding: 0 10px;
     
+} 
+
+
+/* Cards frontpage */
+
+.container-index {
+    width: 100%;
+    height: 50vh;
+}
+
+.container-index{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1-index,.box2-index,.box3-index,.box4-index,.box5-index {
+    height: 500px;
+    width: 350px;
+    background: radial-gradient(circle at top left, transparent 1px, rgba(255, 255, 255, 0.658)),
+    radial-gradient(circle at bottom right, transparent 1px, rgba(255, 255, 255, 0.658));
+    margin: 30px;
+    padding: 0px;
+    color: whitesmoke;
+    text-align: center;
+    transition: .3s ease-in-out;
+
+}
+
+
+.box1-index p, .box2-index p, .box3-index p, .box4-index p, .box5-index p{
+    line-height: 1.6;
+    padding: 0 10px;
+    
+} 
+
+.h2-indexCard {
+    color: #262626;
+    font-size: 20px;
+
 }
 
 /* Email setup */
@@ -138,6 +242,10 @@ padding: 38px;
 .container-contact{
     width: 80%;
     margin: 0% auto; 
+}
+
+.p{
+    color: whitesmoke;
 }
 
 .contact-box{
@@ -153,7 +261,7 @@ padding: 38px;
 .contact-right{
     flex-basis: 40%;
     padding: 40px ;
-    background: #4837aa;
+    background: #151922;
     color: #fff;
 }
 
@@ -195,11 +303,11 @@ input{
 label{
     margin-bottom: 6px;
     display: block;
-    color: #4837aa;
+    color: #151922;
 }
 
 button{
-    background: #4837aa;
+    background: #151922;
     width: 100px;
     border: none;
     outline: none;
@@ -211,7 +319,7 @@ button{
 }
 
 .contact-left h3{
-    color: #4837aa;
+    color: #151922;
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -228,6 +336,10 @@ tr td:first-child{
 tr td:first-child{
     padding-top: 40px;
     font-size: 30px;
+}
+
+.h1-contact{
+    color: whitesmoke;
 }
 
 /* link facebook button */

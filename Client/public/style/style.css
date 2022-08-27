@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: arial;
-} 
+}
 
 /* Nav styles */
 
@@ -72,7 +72,7 @@ padding: 38px;
     line-height: 1.7;
     font-family: arial;
     margin-left: 80px;
-    
+
 }
 
 .h3-prices {
@@ -108,8 +108,8 @@ padding: 38px;
   height: 40vh;
   align-items: center;
   justify-content: center;
-  
-} 
+
+}
 span{
   position: relative;
   display: inline-flex;
@@ -124,7 +124,7 @@ span a{
   transform-style: preserve-3d;
   transform: translateZ(-25px);
   transition: transform .25s;
-  
+
 }
 span a:before,
 span a:after{
@@ -151,9 +151,9 @@ span a:after{
 }
 span a:hover{
   transform: translateZ(-25px) rotateX(-90deg);
-} 
+}
 
-/* Cards */
+/* Cards prices*/
 
  .container-prices {
     width: 100%;
@@ -185,63 +185,87 @@ span a:hover{
     margin: 0 0 .6rem 0;
     color: rgb(10, 10, 10);
     font-family: arial;
-    
+
 }
 
 
 .box1 p, .box2 p, .box3 p, .box4 p, .box5 p{
     line-height: 1.6;
     padding: 0 10px;
-    
-} 
+
+}
 
 
 /* Cards frontpage */
 
-.container-index {
-    width: 100%;
-    height: 50vh;
-}
-
-.container-index{
-    display: flex;
-    flex-wrap: wrap;
+.container-index1{
+    display:flex;
     justify-content: center;
-    align-items: center;
-}
-
-.box1-index,.box2-index,.box3-index,.box4-index,.box5-index {
-    height: 500px;
-    width: 350px;
-    background: radial-gradient(circle at top left, transparent 1px, rgba(255, 255, 255, 0.658)),
-    radial-gradient(circle at bottom right, transparent 1px, rgba(255, 255, 255, 0.658));
-    margin: 30px;
-    padding: 0px;
-    color: whitesmoke;
-    text-align: center;
-    transition: .3s ease-in-out;
-
-}
-
-
-.box1-index p, .box2-index p, .box3-index p, .box4-index p, .box5-index p{
-    line-height: 1.6;
-    padding: 0 10px;
+    flex-wrap: wrap;
     
-} 
-
-.h2-indexCard {
-    color: #262626;
-    font-size: 20px;
 
 }
+
+.card-index{
+    background: #FFF;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+
+}
+
+.card-image {
+    height: 170px; 
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card1{
+    background-image: url(../images/teltudefra.jpg);
+}
+
+.card2{
+    background-image: url(../images/G00086_003.jpg);
+}
+
+.card3{
+    background-image: url(../images/hoppeborg\ 052.jpg);
+}
+
+.card-index h2{
+padding: 10px;
+}
+
+.card-index p{
+    padding: 10px;
+ }
+
+ .card-index a{
+    background-color: black;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+ }
+
+ .card-index:hover{
+    background-color: #151922;
+    color: whitesmoke;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+
+ }
 
 /* Email setup */
 
 
 .container-contact{
     width: 80%;
-    margin: 0% auto; 
+    margin: 0% auto;
 }
 
 .p{
@@ -289,7 +313,7 @@ input{
     border-bottom: 1px solid #ccc;
     outline: none;
     padding-bottom: 5px;
-} 
+}
 
  textarea {
     width: 100%;
@@ -297,8 +321,8 @@ input{
     outline: none;
     padding: 10px;
     box-sizing: border-box;
-    
-}  
+
+}
 
 label{
     margin-bottom: 6px;
@@ -346,7 +370,7 @@ tr td:first-child{
 
 ul
 {
-     
+
     margin: 0;
     padding: 0;
 }
@@ -371,8 +395,8 @@ ul li a
     background: linear-gradient(0deg, #ddd, #fff);
     transition: .5s;
     margin-bottom: 20px;
-    
-    
+
+
 }
 ul li a:hover
 {

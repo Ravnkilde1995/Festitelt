@@ -36,38 +36,37 @@ padding: 38px;
 }
 
 .nav-link-wrapper a {
-    color: #acacac;
+    color: #151922;
     text-decoration: none;
     transition: color 0.5s;
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid #151922;
 }
 
 .nav-link-wrapper a:hover {
-    color: whitesmoke;
+    color: #151922;
 }
 
 .brand {
-    color: whitesmoke;
+    color: #151922;
 }
 
 /*Portfolio styles */
 
 .h3-frontpage {
 
-    color: whitesmoke;
+    color: black;
     font-size: 3em;
     line-height: 1;
     font-family: arial;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px;
     margin-left: 80px;
 }
 
 .h2-frontpage {
-    color: whitesmoke;
+    color: black;
     font-size: 1.2em;
     line-height: 1.7;
     font-family: arial;
@@ -76,18 +75,17 @@ padding: 38px;
 }
 
 .h3-prices {
-    color: whitesmoke;
+    color: black;
     font-size: 3em;
     line-height: 1;
     font-family: arial;
     text-transform: uppercase;
-    text-shadow: 1px 1px 1px;
     margin-left: 80px;
 }
 
 
 .h2-prices {
-    color: whitesmoke;
+    color: black;
     font-size: 1.2em;
     line-height: 1.7;
     font-family: arial;
@@ -95,7 +93,7 @@ padding: 38px;
 }
 
 .hr-white{
-    color: #ccc;
+    color: black;
 }
 
 /* Contact me button frontpage */
@@ -105,7 +103,7 @@ padding: 38px;
   margin: 0px;
   padding: 0px;
   display: flex;
-  height: 40vh;
+  height: 20vh;
   align-items: center;
   justify-content: center;
 
@@ -146,7 +144,8 @@ span a:before{
   transform: rotateY(0deg) translateZ(25px);
 }
 span a:after{
-  color: #fff;
+  color: #151922;
+  
   transform: rotateX(90deg) translateZ(25px);
 }
 span a:hover{
@@ -155,46 +154,64 @@ span a:hover{
 
 /* Cards prices*/
 
- .container-prices {
-    width: 100%;
-    height: 50vh;
-}
-
 .container-prices{
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    
 }
 
-.box1,.box2,.box3,.box4,.box5 {
-    width: 250px;
-    height: 250px;
-    background: radial-gradient(circle at top left, transparent 1px, rgba(255, 255, 255, 0.658)),
-    radial-gradient(circle at bottom right, transparent 1px, rgba(255, 255, 255, 0.658));
-    margin: 15px;
-    padding: 5px;
-    color: whitesmoke;
+.card-prices{
+    background: #FFF;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+
+}
+
+.card-image-prices {
+    height: 250px; 
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-prices h2{
+padding: 10px;
+text-align: center;
+}
+
+.card-prices p{
+    padding: 10px;
+    margin-bottom: 20px;
     text-align: center;
-    transition: .3s ease-in-out;
+    font-size: 20px;
+ }
 
+ .card-prices:hover{
+    background-color: #151922;
+    color: whitesmoke;
+    cursor: pointer;
+    transform: scale(1.13);
+    
+
+ }
+
+ .card4{
+    background-image: url(../images/gas\ varmer..JPG);
 }
-
-.h2-pricesCard{
-    letter-spacing: 2px;
-    margin: 0 0 .6rem 0;
-    color: rgb(10, 10, 10);
-    font-family: arial;
-
+.card5{
+    background-image: url(../images/el\ varmer\ 230w..JPG);
 }
-
-
-.box1 p, .box2 p, .box3 p, .box4 p, .box5 p{
-    line-height: 1.6;
-    padding: 0 10px;
-
+.card6{
+    background-image: url(../images/lys.JPG);
 }
-
+.card7{
+    background-image: url(../images/stol.JPG);
+}
+.card8{
+    background-image: url(../images/bord.jpg);
+}
 
 /* Cards frontpage */
 
@@ -269,7 +286,7 @@ padding: 10px;
 }
 
 .p{
-    color: whitesmoke;
+    color: black;
 }
 
 .contact-box{
@@ -363,7 +380,7 @@ tr td:first-child{
 }
 
 .h1-contact{
-    color: whitesmoke;
+    color: black;
 }
 
 /* link facebook button */

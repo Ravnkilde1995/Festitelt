@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static(path.resolve("./Client/public")));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.resolve("./Client/public/index.html"));
+    res.sendFile(path.resolve("/Client/public/index.html"));
 });
 
 app.get("/tent", (req, res) => {

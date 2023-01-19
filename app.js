@@ -59,7 +59,7 @@ function sendMail(name, phone, email, subject, message) {
     });
 }
 
-// const PORT = 9000;
+const PORT = process.env.PORT;
 app.listen((process.env.PORT||"9000"), () => {
-    // console.log("App running on port", PORT)
+     console.log("App running on port", PORT)
 });
